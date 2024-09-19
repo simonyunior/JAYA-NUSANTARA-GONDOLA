@@ -1,1 +1,1 @@
-alert('Welcome to My Company Website!');
+alert('Welcome to Jaya Nusantara Gondola Website!');
