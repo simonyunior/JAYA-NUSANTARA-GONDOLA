@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek di RSAB Harapan Kita - Jaya Nusantara Gondola</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .thumbnail {
+        width: 200px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      .thumbnail:hover {
+        transform: scale(1.1);
+      }
+
+      #lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding: 60px;
+        background-color: rgba(0,0,0,0.9);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      #lightbox img {
+        max-width: 90%;
+        max-height: 80%;
+      }
+
+      #lightbox:target {
+        display: block;
+      }
+    </style>
+  </head>
+  
+<body>
+  <header>
+    <h1>JAYA NUSANTARA GONDOLA</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="project-details">
+    <h2>Proyek di Jakarta Barat</h2>
+    <p>Proyek ketiga yang sedang berjalan di RSAB Harapan Kita.</p>
+    <p>Penyewaan gondola untuk pengecatan gedung bekerja sama dengan RSAB Harapan Kita yang terletak di Jalan Letjen S. Parman Kav. 87, Slipi, Jakarta Barat</p>
+    
+    <a href="#lightbox1"><img src="images/rsab1.jpeg" alt="RSAB Gondola Project" class="thumbnail"></a>
+    <a href="#lightbox2"><img src="images/rsab2.jpeg" alt="RSAB Gondola Project" class="thumbnail"></a>
+  </section>
+
+  <div id="lightbox1" class="lightbox">
+    <a href="#"><img src="images/rsab1.jpeg" alt="RSAB Gondola Project"></a>
+  </div>
+
+  <div id="lightbox2" class="lightbox">
+    <a href="#"><img src="images/rsab2.jpeg" alt="RSAB Gondola Project"></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 JAYA NUSANTARA GONDOLA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
